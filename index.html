@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>NRIFT Canteen Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!---------------------------------------------NAVBAR-------------------------------------------------->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Image and text -->
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" width="90" height="30" class="d-inline-block align-top" alt=""
+                    loading="lazy">
+                NRI Fintech
+            </a>
+        </nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Our Canteen <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#login">Login/Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-------------------------------------MAIN STARTS-------------------------------------------->
+    <div class="main">
+
+        <!----------------------------------------CAROUSEL---------------------------------------------->
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="car carousel-inner">
+                <h1 class="carcontent">Welcome to NRI Fintech Canteen</h1>
+                <div class="carousel-item active">
+                    <img src="images/pic1.jpg" class="carimg d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/pic2.jpg" class="carimg d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/pic3.jpg" class="carimg d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/pic4.jpg" class="carimg d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/pic5.jpg" class="carimg d-block w-100" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!--------------------------------------LOGIN/REGISTER---------------------------------------->
+        <div id="login" class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <img class="login-img" src="images/side.jpg">
+                </div>
+                <div class="login col-sm">
+                    <div class="loginsec">
+                        <h2>Login</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="username">Username</label>
+                                <input type="email" class="form-control" id="username" aria-describedby="emailHelp">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                    anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password">
+                            </div>
+                            <div class="text-center submit">
+                                <button type="submit" class="loginbtn btn btn-primary btn-block">Login</button>
+                                <!--FORGOTTEN PASSWORD-->
+                                <small id="forgottenpwd" class="form-text text-muted"><a href="#">Forgotten password?</a></small>
+                                <hr class="hr">
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="register btn btn-primary" data-toggle="modal"
+                                    data-target="#registerModal">
+                                    Register Now
+                                </button>
+                            </div>
+                            <!-- REGISTER Modal -->
+                            <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Register Now</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <div class="form-group">
+                                                        <label for="name">Name</label>
+                                                        <input type="text" class="form-control" id="name">
+                                                    </div>
+                                                    <label for="userEmail">Email</label>
+                                                    <input type="email" class="form-control" id="userEmail"
+                                                        aria-describedby="emailHelp">
+                                                    <small id="emailHelp" class="form-text text-muted">We'll never share
+                                                        your email with
+                                                        anyone else.</small>
+                                                        <div class="form-group">
+                                                            <label for="userName">Username</label>
+                                                            <input type="text" class="form-control" id="userName">
+                                                        </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="password">Password</label>
+                                                    <input type="password" class="form-control" id="password">
+                                                </div>
+                                                <div class="text-center submit">
+                                                    <button type="submit"
+                                                        class="register btn btn btn-primary btn-block">Register</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-----------------------------------MAIN ENDS-------------------------------------------->
+    </div>
+    <!-----------------------------------SERVICES--------------------------------------------->
+    <div id="services" class="services container">
+        <div class="row">
+            <div class="login col-sm">
+                <div class="loginsec">
+                    <h2>Services</h2><br>
+                    <div class="keycontent">
+                        <li>Automates Canteen Facility</li>
+                        <li>Keeps track of orders</li>
+                        <li>Choose your favourite meals</li>
+                        <li>Schedule meals for next month</li>
+                        <li>Separate veg and non-veg section</li>
+                        <li>Dining facility without any hassle</li>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <img class="serviceimg" src="images/back22.jpg">
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------------------FOOTER-------------------------------------------------------->
+    <footer>
+        <div class="pages">
+            <h3>Customer Care</h3>
+            <a href="index.html">Our Canteen</a>|
+            <a href="#services">Services</a>|
+            <a href="#login">Login/Register</a>|
+        </div>
+        <div class="social">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com/NRIFintechIndia" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/company/nomura-research-institute-financial-technologies-india-pvt--ltd-/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/nri_fintech/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <a href="https://api.WhatsApp.com/send?phone=+910000000000" target="_blank"><i class="fa fa-whatsapp"
+                    aria-hidden="true"></i></a>
+            <a href="tel: +910000000000"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            <a href="mailto: nrifintech@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+        </div>
+        <hr class="hr">
+        <p>Copyright &copy; 2023 NRI Fintech. All rights reserved.</p>
+    </footer>
+
+
+
+    <!--------------------------------- Optional JavaScript; choose one of the two! ----------------->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
